@@ -3,7 +3,7 @@ angular.module('userProfiles').controller('MainController', function($scope, mai
     mainService.getUsers().then(function(dataFromService) {
       $scope.users = dataFromService.data.data;
     });
-  }
+  };
 
   $scope.getUsers();
 
